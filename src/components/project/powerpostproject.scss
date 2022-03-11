@@ -10,7 +10,7 @@
 
   .left {
     display: flex;
-    background-color: rgb(59, 59, 255);
+    background-color: $mainColor;
     flex-direction: column;
     flex: 4;
     justify-content: center;
@@ -209,7 +209,7 @@
       .linkButton {
         color: white;
         padding: 5px 50px;
-        background-color: rgb(48, 48, 250);
+        background-color: $mainColor;
         border-radius: 5px;
         border: none;
         box-shadow: 5px 5px 5px rgb(202, 202, 202);
@@ -221,7 +221,7 @@
         }
 
         &:hover {
-          background-color: rgb(26, 26, 251);
+          background-color: $mainColorHover;
         }
       }
     }

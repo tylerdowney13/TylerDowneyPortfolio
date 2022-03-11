@@ -4,6 +4,10 @@
   background-color: white;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     flex: 1;
 
@@ -13,19 +17,35 @@
       align-items: center;
       padding: 10px;
 
+      @include mobile {
+        padding: 3px 0 0 0;
+      }
+
       .aboutTitle {
         font-size: 50px;
         color: black;
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
     }
 
     .aboutInfoContainer {
       padding: 5px;
 
+      @include mobile {
+        padding: 0 5px;
+      }
+
       .educationContainer {
         .educationTitleContainer {
           .title {
             font-size: 30px;
+
+            @include mobile {
+              font-size: 20px;
+            }
           }
         }
         .educationInfoContainer {
@@ -33,6 +53,10 @@
           justify-content: center;
           align-items: center;
           padding: 10px;
+
+          @include mobile {
+            flex-direction: column;
+          }
 
           .educationInfoBox {
             width: 300px;
@@ -177,10 +201,10 @@
         height: 75px;
         padding: 7px;
         margin: 12px;
-        background-color: darkblue;
+        background-color: $secondaryColor;
         border-radius: 10px;
         box-shadow: 5px 5px 5px black;
-        border: 1.5px solid rgb(1, 1, 110);
+        border: 1.5px solid #1d1d1d;
         transition: 0.5s ease all;
 
         &:hover {
