@@ -1,0 +1,164 @@
+@import "../../global.scss";
+
+.topbar {
+  width: 100%;
+  height: 70px;
+  background-color: $mainColor;
+  position: fixed;
+  color: white;
+  top: 0;
+  z-index: 999;
+  transition: all 1s ease;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile {
+      padding-top: 17px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        @include mobile {
+        }
+
+        .icon {
+          font-size: 32px;
+          margin-right: 5px;
+
+          @include mobile {
+            font-size: 25px;
+            margin-right: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .icon2 {
+          font-size: 40px;
+          margin-right: 5px;
+
+          @include mobile {
+            font-size: 25px;
+            margin-right: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        span {
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          visibility: hidden;
+          width: 0;
+          height: 0;
+        }
+
+        .navItemContainer {
+          a {
+            text-decoration: none;
+            color: white;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @include mobile {
+            visibility: hidden;
+          }
+
+          span {
+            font-size: 25px;
+            font-weight: 500;
+            padding: 0 10px;
+          }
+        }
+      }
+
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        visibility: hidden;
+
+        @include mobile {
+          visibility: visible;
+        }
+
+        span {
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transform-origin: left;
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+
+  &.active {
+    background-color: rgb(25, 25, 255);
+    color: white;
+
+    .hamburger {
+      span {
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

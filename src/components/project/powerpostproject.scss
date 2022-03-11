@@ -1,0 +1,229 @@
+@import "../../global.scss";
+
+.powerpostProject {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    display: flex;
+    background-color: rgb(59, 59, 255);
+    flex-direction: column;
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile {
+      flex: 7;
+      padding-bottom: 5px;
+    }
+
+    .powerpostProjectTitleContainer {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 10px;
+      margin-left: 10px;
+      color: white;
+
+      h2 {
+        font-size: 40px;
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      .powerpostProjectTitleIcon {
+        padding-left: 5px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .powerpostProjectSubtitleContainer {
+      color: white;
+
+      @include mobile {
+        font-size: 12px;
+        overflow: hidden;
+      }
+    }
+
+    .powerpostProjectInfoContainer {
+      margin-right: 10px;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .powerpostProjectInfoContainerDescription {
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 400px;
+        height: 185px;
+        border-radius: 10px;
+        background-color: rgb(233, 233, 233);
+        box-shadow: 5px 5px 5px black;
+        margin-right: 10px;
+
+        @include mobile {
+          width: 90%;
+        }
+
+        .titleContainer {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          padding-top: 5px;
+          font-weight: 500;
+          border-bottom: 2px solid darkgrey;
+        }
+
+        .descriptionParagraph {
+          margin: 5px;
+          padding: 5px;
+          font-size: 15px;
+          text-align: justify;
+          line-height: 1.5;
+
+          @include mobile {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .powerpostProjectInfoContainerBuiltWith {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 400px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: rgb(233, 233, 233);
+        box-shadow: 5px 5px 5px black;
+        margin-bottom: 10px;
+        margin-right: 10px;
+
+        @include mobile {
+          width: 90%;
+        }
+
+        .titleContainer {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          padding-top: 5px;
+          font-weight: 500;
+          border-bottom: 2px solid darkgrey;
+        }
+
+        .builtWithIconsContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 95%;
+          height: 95px;
+          margin: 5px;
+
+          .builtWithIconContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 75px;
+
+            .builtWithIcon {
+              width: 60px;
+              height: 60px;
+            }
+
+            .builtWithIconDescription {
+              font-size: 10px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+
+    .powerpostProjectMediaContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(233, 233, 233);
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px rgb(202, 202, 202);
+
+      @include mobile {
+        padding: 10px 5px;
+        padding-right: 10px;
+        width: 90%;
+        height: 80%;
+      }
+
+      .powerpostProjectGif {
+        img {
+          padding: 10px;
+          height: 300px;
+          width: 500px;
+        }
+
+        @include mobile {
+          width: 95%;
+          height: 95%;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .linksContainer {
+      padding: 10px;
+      display: flex;
+      justify-content: space-evenly;
+
+      @include mobile {
+        padding: 5px;
+      }
+
+      .linkButton {
+        color: white;
+        padding: 5px 50px;
+        background-color: rgb(48, 48, 250);
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 5px rgb(202, 202, 202);
+        margin: 10px;
+
+        @include mobile {
+          font-size: 12px;
+          overflow: hidden;
+        }
+
+        &:hover {
+          background-color: rgb(26, 26, 251);
+        }
+      }
+    }
+  }
+}

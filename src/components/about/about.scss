@@ -1,0 +1,262 @@
+@import "../../global.scss";
+
+.about {
+  background-color: white;
+  display: flex;
+
+  .left {
+    flex: 1;
+
+    .aboutTitleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      .aboutTitle {
+        font-size: 50px;
+        color: black;
+      }
+    }
+
+    .aboutInfoContainer {
+      padding: 5px;
+
+      .educationContainer {
+        .educationTitleContainer {
+          .title {
+            font-size: 30px;
+          }
+        }
+        .educationInfoContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+
+          .educationInfoBox {
+            width: 300px;
+            height: 150px;
+            background-color: rgb(233, 233, 233);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+            border: 1.5px solid lightgrey;
+            transition: 0.5s ease all;
+
+            &:hover {
+              width: 310px;
+              height: 155px;
+            }
+
+            .educationInfo {
+              padding: 5px;
+
+              .educationInfoHeader {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-bottom: 7px;
+
+                .educationIconContainer {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-right: 5px;
+
+                  .icon {
+                    font-size: 30px;
+                  }
+                }
+
+                .educationTextContainer {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+
+                  .text {
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    &:hover {
+                      font-weight: 800;
+                    }
+                  }
+
+                  .text3 {
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    &:hover {
+                      font-weight: 800;
+                    }
+                  }
+                }
+              }
+
+              .educationInfoDegree {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 7px 5px;
+
+                .educationIconContainer2 {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  .icon2 {
+                    font-size: 20px;
+                  }
+                }
+
+                .educationTextContainer2 {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-left: 3px;
+
+                  a {
+                    text-decoration: none;
+                    color: black;
+                  }
+
+                  .text2 {
+                    font-size: 14px;
+                    font-weight: 500;
+
+                    &:hover {
+                      font-weight: 800;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    background-color: $mainColor;
+    justify-content: center;
+    align-items: center;
+
+    .skillsTitleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+      .skillsTitle {
+        font-size: 50px;
+        color: white;
+      }
+    }
+
+    .skillsIconsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      height: 80%;
+      width: 95%;
+
+      .skillsIconContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        padding: 7px;
+        margin: 12px;
+        background-color: darkblue;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        border: 1.5px solid rgb(1, 1, 110);
+        transition: 0.5s ease all;
+
+        &:hover {
+          width: 80px;
+          height: 80px;
+
+          .yellow {
+            color: #f0db4f;
+          }
+
+          .orangered {
+            color: #f06529;
+          }
+
+          .lightblue {
+            color: rgba(0, 98, 255, 0.945);
+          }
+
+          .aqua {
+            color: #61dbfb;
+          }
+
+          .lightgreen {
+            color: #68a063;
+          }
+
+          .awsorange {
+            color: #ff9900;
+          }
+
+          .darkbluegrey {
+            color: rgb(62, 60, 80);
+          }
+
+          .javaorange {
+            color: #f89820;
+          }
+
+          .springgreen {
+            color: rgb(99, 205, 50);
+          }
+
+          .pythonyellow {
+            color: #ffd43b;
+          }
+
+          .restbrown {
+            color: rgb(133, 70, 33);
+          }
+
+          .postgresblue {
+            color: rgb(48, 48, 153);
+          }
+
+          .mongodbgreen {
+            color: #4db33d;
+          }
+
+          .dockerblue {
+            color: #0db7ed;
+          }
+        }
+
+        .skillsIcon {
+          color: white;
+          width: 95%;
+          height: 95%;
+        }
+
+        .skillsText {
+          color: white;
+          overflow: hidden;
+          padding: 2px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
