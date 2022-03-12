@@ -153,7 +153,7 @@ const About = () => {
             </div>
             <div className="skillsIconContainer">
               <AiFillApi className="skillsIcon restbrown"/>
-              <span className="skillsText restbrown">REST APIs</span>
+              <span className="skillsText restbrown">REST</span>
             </div>
             <div className="skillsIconContainer">
               <SiPostgresql className="skillsIcon postgresblue"/>

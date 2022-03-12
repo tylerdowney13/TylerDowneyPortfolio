@@ -142,7 +142,7 @@
   }
 
   &.active {
-    background-color: rgb(25, 25, 255);
+    background-color: $secondaryColor;
     color: white;
 
     .hamburger {

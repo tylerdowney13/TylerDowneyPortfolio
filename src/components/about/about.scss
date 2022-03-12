@@ -11,6 +11,10 @@
   .left {
     flex: 1;
 
+    @include mobile {
+      flex: 1;
+    }
+
     .aboutTitleContainer {
       display: flex;
       justify-content: center;
@@ -23,10 +27,10 @@
 
       .aboutTitle {
         font-size: 50px;
-        color: black;
+        color: $mainColor;
 
         @include mobile {
-          font-size: 40px;
+          font-size: 30px;
         }
       }
     }
@@ -41,7 +45,8 @@
       .educationContainer {
         .educationTitleContainer {
           .title {
-            font-size: 30px;
+            font-size: 40px;
+            color: $mainColor;
 
             @include mobile {
               font-size: 20px;
@@ -59,8 +64,8 @@
           }
 
           .educationInfoBox {
-            width: 300px;
-            height: 150px;
+            width: 425px;
+            height: 250px;
             background-color: rgb(233, 233, 233);
             margin: 5px;
             padding: 5px;
@@ -68,10 +73,21 @@
             box-shadow: 5px 5px 5px black;
             border: 1.5px solid lightgrey;
             transition: 0.5s ease all;
+            color: $mainColor;
+
+            @include mobile {
+              width: 300px;
+              height: 135px;
+            }
 
             &:hover {
-              width: 310px;
-              height: 155px;
+              width: 430px;
+              height: 255px;
+
+              @include mobile {
+                width: 300px;
+                height: 135px;
+              }
             }
 
             .educationInfo {
@@ -83,6 +99,10 @@
                 align-items: center;
                 padding-bottom: 7px;
 
+                @include mobile {
+                  padding-bottom: 3px;
+                }
+
                 .educationIconContainer {
                   display: flex;
                   justify-content: center;
@@ -90,7 +110,11 @@
                   padding-right: 5px;
 
                   .icon {
-                    font-size: 30px;
+                    font-size: 50px;
+
+                    @include mobile {
+                      font-size: 25px;
+                    }
                   }
                 }
 
@@ -100,8 +124,12 @@
                   align-items: center;
 
                   .text {
-                    font-size: 20px;
+                    font-size: 30px;
                     font-weight: 500;
+
+                    @include mobile {
+                      font-size: 20px;
+                    }
 
                     &:hover {
                       font-weight: 800;
@@ -109,8 +137,12 @@
                   }
 
                   .text3 {
-                    font-size: 18px;
+                    font-size: 28px;
                     font-weight: 500;
+
+                    @include mobile {
+                      font-size: 18px;
+                    }
 
                     &:hover {
                       font-weight: 800;
@@ -131,7 +163,11 @@
                   align-items: center;
 
                   .icon2 {
-                    font-size: 20px;
+                    font-size: 40px;
+
+                    @include mobile {
+                      font-size: 20px;
+                    }
                   }
                 }
 
@@ -147,8 +183,12 @@
                   }
 
                   .text2 {
-                    font-size: 14px;
+                    font-size: 20px;
                     font-weight: 500;
+
+                    @include mobile {
+                      font-size: 15px;
+                    }
 
                     &:hover {
                       font-weight: 800;
@@ -175,9 +215,17 @@
       align-items: center;
       padding: 10px;
 
+      @include mobile {
+        padding: 2px;
+      }
+
       .skillsTitle {
         font-size: 50px;
         color: white;
+
+        @include mobile {
+          font-size: 30px;
+        }
       }
     }
 
@@ -192,13 +240,17 @@
       height: 80%;
       width: 95%;
 
+      @include mobile {
+        padding-top: 5px;
+      }
+
       .skillsIconContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75px;
-        height: 75px;
+        width: 140px;
+        height: 140px;
         padding: 7px;
         margin: 12px;
         background-color: $secondaryColor;
@@ -207,9 +259,20 @@
         border: 1.5px solid #1d1d1d;
         transition: 0.5s ease all;
 
+        @include mobile {
+          width: 45px;
+          height: 45px;
+          padding: 5px;
+        }
+
         &:hover {
-          width: 80px;
-          height: 80px;
+          width: 145px;
+          height: 145px;
+
+          @include mobile {
+            width: 47px;
+            height: 47px;
+          }
 
           .yellow {
             color: #f0db4f;

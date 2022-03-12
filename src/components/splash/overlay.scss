@@ -1,0 +1,60 @@
+@import "../../global.scss";
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .nameContainer {
+    padding: 50px;
+
+    h1 {
+      font-size: 125px;
+      color: white;
+      opacity: 75%;
+      transition: 0.5s ease all;
+
+      &:hover {
+        font-size: 135px;
+      }
+
+      @include mobile {
+        font-size: 100px;
+
+        &:hover {
+          font-size: 105px;
+        }
+      }
+    }
+
+    .subtextContainer {
+      height: 70px;
+
+      .subtext {
+        font-size: 50px;
+        color: white;
+        opacity: 75%;
+        transition: 0.5s ease all;
+
+        &:hover {
+          font-size: 55px;
+        }
+
+        @include mobile {
+          font-size: 40px;
+
+          &:hover {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}

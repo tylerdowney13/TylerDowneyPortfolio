@@ -3,7 +3,9 @@ import './projects.scss';
 function Projects() {
   return (
     <div className="projects" id="projects">
-      <h1>Projects</h1>
+      <div className="projectsTitleContainer">
+        <h1>Projects</h1>
+      </div>
       <div className="projectPanelsContainer">
         <div className="projectPanel1">
           <div className="projectPanel1Info">

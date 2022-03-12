@@ -1,4 +1,10 @@
 import { FitnessCenter } from '@material-ui/icons';
+import { FaUniversity, FaReact, FaNodeJs, FaJava, FaPython, FaAws, FaDocker } from 'react-icons/fa';
+import { IoIosSchool, IoIosLink } from 'react-icons/io';
+import { GrCertificate } from 'react-icons/gr';
+import { DiJavascript, DiCss3 } from 'react-icons/di';
+import { AiFillHtml5, AiFillApi } from 'react-icons/ai';
+import { SiExpress, SiSpringboot, SiSpring, SiPostgresql, SiMongodb } from 'react-icons/si';
 
 import './powerpostproject.scss';
 
@@ -24,7 +30,8 @@ const PowerPostProject = () => {
               pictures of themselves in the gym, look through their friends posts in their
               PowerFeed, track their numbers in LiftLog, calculate their one rep maxes,
               read articles created by admins, and message each other with the instant 
-              messaging feature.
+              messaging feature. PowerPost is powered by a custom API built using ExpressJS 
+              and MongoDB.
             </p>
           </div>
           <div className="powerpostProjectInfoContainerBuiltWith">
@@ -33,27 +40,10 @@ const PowerPostProject = () => {
             </div>
             <div className="builtWithIconsContainer">
               <div className="builtWithIconContainer">
-                <img className="builtWithIcon" src="assets/javascript.png" alt=""/>
+                <DiJavascript className="builtWithIcon" />
                 <span className="builtWithIconDescription">JavaScript</span>
               </div>
-              <div className="builtWithIconContainer">
-                <img className="builtWithIcon" src="assets/html.png" alt=""/>
-                <span className="builtWithIconDescription">HTML</span>
-              </div>
-               <div className="builtWithIconContainer">
-                <img className="builtWithIcon" src="assets/css.png" alt=""/>
-                <span className="builtWithIconDescription">CSS</span>
-              </div>
-            </div>
-            <div className="builtWithIconsContainer">
-              <div className="builtWithIconContainer">
-                <img className="builtWithIcon" src="assets/mongoDB.png" alt=""/>
-                <span className="builtWithIconDescription">MongoDB</span>
-              </div>
-              <div className="builtWithIconContainer">
-                <img className="builtWithIcon" src="assets/expressJS.png" alt=""/>
-                <span className="builtWithIconDescription">ExpressJS</span>
-              </div>
+
             </div>
           </div>
         </div>

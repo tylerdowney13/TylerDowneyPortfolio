@@ -1,7 +1,9 @@
+@import "../../global.scss";
+
 .menu {
-  width: 300px;
+  width: 200px;
   height: 100vh;
-  background-color: rgb(25, 25, 255);
+  background-color: $secondaryColor;
   position: fixed;
   top: 0;
   right: -300px;

@@ -1,14 +1,20 @@
 @import "../../global.scss";
 
 .projects {
-  background-color: white;
+  background-color: $mainColor;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  .projectsTitleContainer {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
   h1 {
     font-size: 50px;
     padding-top: 10px;
+    color: white;
 
     @include mobile {
       font-size: 25px;
