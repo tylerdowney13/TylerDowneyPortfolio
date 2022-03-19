@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  background-color: $mainColor;
   display: flex;
 
   @include mobile {
@@ -30,9 +30,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 700px;
 
     @include mobile {
-      flex: 2;
+      flex: 2.5;
     }
 
     .contactTitleContainer {
@@ -44,6 +45,7 @@
 
       h2 {
         font-size: 30px;
+        color: white;
       }
     }
 
@@ -51,7 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 95%;
+      width: 100%;
 
       form {
         width: 100%;
@@ -72,10 +74,10 @@
           align-items: center;
           padding-top: 5px;
           padding-bottom: 10px;
-          width: 95%;
+          width: 100%;
 
           input {
-            width: 300px;
+            width: 90%;
             height: 25px;
             font-size: 14px;
 
@@ -86,14 +88,16 @@
           }
 
           textarea {
-            width: 300px;
+            width: 90%;
             height: 170px;
             font-size: 14px;
             margin-top: 5px;
+            overflow: hidden;
 
             @include mobile {
               width: 95%;
-              height: 180px;
+              height: 200px;
+              overflow: hidden;
             }
           }
 
@@ -101,20 +105,21 @@
             width: 50%;
             height: 30px;
             color: white;
-            background-color: $mainColor;
+            background-color: $secondaryColor;
             border: none;
             border-radius: 10px;
             font-weight: 500;
             cursor: pointer;
+            overflow: hidden;
 
             @include mobile {
-              width: 96%;
+              width: 95%;
             }
 
             &:focus,
             &:hover {
               outline: none;
-              background-color: rgb(37, 37, 255);
+              background-color: $mainColorHover;
             }
           }
         }

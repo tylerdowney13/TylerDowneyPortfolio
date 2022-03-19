@@ -1,10 +1,12 @@
+@import "./global.scss";
+
 .app {
   height: 100vh;
 
   .sections {
     width: 100%;
     height: calc(100vh - 50px);
-    background-color: white;
+    background-color: $mainColor;
     position: relative;
     top: 50px;
     scroll-behavior: smooth;
@@ -18,6 +20,14 @@
       width: 100vw;
       height: calc(100vh - 50px);
       scroll-snap-align: start;
+    }
+
+    @include mobile {
+      > * {
+        width: 100vw;
+        height: calc(100vh - 50px);
+        scroll-snap-align: none;
+      }
     }
   }
 }

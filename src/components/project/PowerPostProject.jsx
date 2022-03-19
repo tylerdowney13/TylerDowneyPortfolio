@@ -43,7 +43,6 @@ const PowerPostProject = () => {
                 <DiJavascript className="builtWithIcon" />
                 <span className="builtWithIconDescription">JavaScript</span>
               </div>
-
             </div>
           </div>
         </div>

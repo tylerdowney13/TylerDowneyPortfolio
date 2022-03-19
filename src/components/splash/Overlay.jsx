@@ -1,6 +1,7 @@
 import './overlay.scss';
 import { init } from 'ityped';
 import { useRef, useEffect } from 'react';
+import { AiOutlineDown } from 'react-icons/ai';
 
 const Overlay = () => {
 
@@ -22,6 +23,11 @@ const Overlay = () => {
                 <div className="subtextContainer">
                     <h3><span ref={textRef} className="subtext"></span></h3>
                 </div>
+            </div>
+            <div className="skillsLinkIconContainer">
+                <a className="skillsLink" href="#skills">
+                    <AiOutlineDown className="skillsIcon" />
+                </a>
             </div>
         </div>
     )

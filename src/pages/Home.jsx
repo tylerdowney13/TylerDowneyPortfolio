@@ -2,9 +2,11 @@ import Topbar from "../components/topbar/Topbar";
 import Splash from '../components/splash/Splash';
 import Projects from "../components/projects/Projects";
 import PowerPostProject from "../components/project/PowerPostProject";
+import SHRTProject from "../components/project2/SHRTProject";
 import Contact from '../components/contact/Contact';
-import About from "../components/about/About";
+import Skills from "../components/skills/Skills";
 import Menu from "../components/menu/Menu";
+// import About from "../components/about/About";
 // import Intro from '../components/intro/Intro';
 // import Portfolio from '../components/portfolio/Portfolio';
 // import Works from '../components/works/Works';
@@ -23,9 +25,10 @@ function Home() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Splash />
-        <About />
+        <Skills />
         <Projects />
         <PowerPostProject />
+        <SHRTProject />
         <Contact />
       </div>
     </div>

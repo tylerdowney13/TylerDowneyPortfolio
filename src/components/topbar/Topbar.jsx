@@ -26,8 +26,8 @@ function Topbar({menuOpen, setMenuOpen}) {
         <div className="right">
           <div className="navigation">
             <div className="navItemContainer">
-              <a href="#about">
-                <span>About</span>
+              <a href="#skills">
+                <span>Skills</span>
               </a>
             </div>
             <div className="navItemContainer">

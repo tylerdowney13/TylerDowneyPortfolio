@@ -1,0 +1,160 @@
+@import "../../global.scss";
+
+.skills {
+  background-color: $mainColor;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .skillsTitleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-top: 10px;
+      overflow: hidden;
+
+      @include mobile {
+        padding: 2px;
+      }
+
+      .skillsTitle {
+        font-size: 50px;
+        color: white;
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .skillsIconsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      height: 85%;
+      width: 80%;
+      overflow: hidden;
+
+      @include mobile {
+        padding-top: 5px;
+        width: 100vw;
+        height: 80vh;
+      }
+
+      .skillsIconContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 12vw;
+        height: 18vh;
+        padding: 7px;
+        margin: 12px;
+        background-color: $secondaryColor;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
+        border: 1.5px solid #1d1d1d;
+        transition: 0.5s ease all;
+
+        @include mobile {
+          width: 90px;
+          height: 90px;
+          padding: 5px;
+        }
+
+        &:hover {
+          width: 13vw;
+          height: 19vh;
+
+          @include mobile {
+            width: 95px;
+            height: 95px;
+          }
+
+          .yellow {
+            color: #f0db4f;
+          }
+
+          .orangered {
+            color: #f06529;
+          }
+
+          .lightblue {
+            color: rgba(0, 98, 255, 0.945);
+          }
+
+          .aqua {
+            color: #61dbfb;
+          }
+
+          .lightgreen {
+            color: #68a063;
+          }
+
+          .awsorange {
+            color: #ff9900;
+          }
+
+          .darkbluegrey {
+            color: rgb(62, 60, 80);
+          }
+
+          .javaorange {
+            color: #f89820;
+          }
+
+          .springgreen {
+            color: rgb(99, 205, 50);
+          }
+
+          .pythonyellow {
+            color: #ffd43b;
+          }
+
+          .restbrown {
+            color: rgb(133, 70, 33);
+          }
+
+          .postgresblue {
+            color: rgb(48, 48, 153);
+          }
+
+          .mongodbgreen {
+            color: #4db33d;
+          }
+
+          .dockerblue {
+            color: #0db7ed;
+          }
+        }
+
+        .skillsIcon {
+          color: white;
+          width: 95%;
+          height: 95%;
+        }
+
+        .skillsText {
+          color: white;
+          overflow: hidden;
+          padding: 2px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

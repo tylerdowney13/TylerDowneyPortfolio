@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  position: absolute;
 
   .nameContainer {
     padding: 50px;
@@ -53,6 +54,25 @@
           &:hover {
             font-size: 40px;
           }
+        }
+      }
+    }
+  }
+
+  .skillsLinkIconContainer {
+    position: absolute;
+    top: 80vh;
+    .skillsLink {
+      text-decoration: none;
+      color: white;
+      .skillsIcon {
+        width: 75px;
+        height: 75px;
+        transition: 0.5s ease all;
+
+        &:hover {
+          width: 90px;
+          height: 90px;
         }
       }
     }

@@ -47,7 +47,7 @@ function Contact() {
               <textarea placeholder='Message' name="message"></textarea>
             </div>
             <div className="inputContainer">
-              <button type="suibmit">Send</button>
+              <button type="submit">Send</button>
             </div>
             {message && <span>Thanks! I'll reply ASAP.</span>}
         </form>
