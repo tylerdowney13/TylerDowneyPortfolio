@@ -1,5 +1,4 @@
-// import { FaUniversity, FaReact, FaNodeJs, FaJava, FaPython, FaAws, FaDocker } from 'react-icons/fa';
-// import { IoIosSchool, IoIosLink } from 'react-icons/io';
+import { FaTshirt } from 'react-icons/fa';
 // import { GrCertificate } from 'react-icons/gr';
 import { DiJavascript} from 'react-icons/di'; // DiCss3
 // import { AiFillHtml5, AiFillApi } from 'react-icons/ai';
@@ -13,8 +12,8 @@ const SHRTProject = () => {
       <div className="right">
         <div className="shrtProjectMediaContainer">
           <div className="powerpostProjectGif">
-            <a href="https://powerpost.netlify.app" target="_blank">
-              <img src="assets/powerpostGIF.gif" alt="" />
+            <a href="https://shrtstore.netlify.app" target="_blank">
+              <img src="assets/SHRTGIF.gif" alt="" />
             </a>
           </div>
         </div>
@@ -23,7 +22,7 @@ const SHRTProject = () => {
               <button className="linkButton">
                 Live Site</button>
             </a>
-            <a href="https://github.com/tylerdowney13/powerpost" target="_blank">
+            <a href="https://github.com/tylerdowney13/SHRTStore" target="_blank">
               <button className="linkButton">GitHub</button>
             </a>
           </div>
@@ -31,6 +30,7 @@ const SHRTProject = () => {
       <div className="left">
         <div className="powerpostProjectTitleContainer">
           <h2>SHRT</h2>
+          <FaTshirt className="powerpostProjectTitleIcon"/>
         </div>
         <div className="powerpostProjectSubtitleContainer">
           <h3>E-Commerce Website</h3>

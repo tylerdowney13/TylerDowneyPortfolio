@@ -5,7 +5,7 @@
   display: flex;
 
   @include mobile {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .left {
@@ -39,8 +39,8 @@
 
       .powerpostProjectTitleIcon {
         padding-left: 5px;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
 
         @include mobile {
           height: 30px;
