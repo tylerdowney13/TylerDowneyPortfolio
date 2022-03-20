@@ -36,6 +36,11 @@ function Topbar({menuOpen, setMenuOpen}) {
               </a>
             </div>
             <div className="navItemContainer">
+              <a href="/assets/documents/TylerDowneyResume.pdf" target="_blank">
+                <span>Resume</span>
+              </a>
+            </div>
+            <div className="navItemContainer">
               <a href="#contact">
                 <span>Contact</span>
               </a>
