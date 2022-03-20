@@ -68,6 +68,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        overflow: hidden;
       }
 
       .powerpostProjectInfoContainerDescription {
@@ -79,6 +81,7 @@
         background-color: rgb(233, 233, 233);
         box-shadow: 5px 5px 5px black;
         margin-right: 10px;
+        overflow: hidden;
 
         @include mobile {
           width: 90%;
@@ -171,11 +174,20 @@
             .builtWithIcon {
               width: 120px;
               height: 120px;
+
+              @include mobile {
+                width: 32px;
+                height: 32px;
+              }
             }
 
             .builtWithIconDescription {
               font-size: 20px;
               font-weight: 500;
+
+              @include mobile {
+                font-size: 12px;
+              }
             }
           }
         }
@@ -241,6 +253,10 @@
 
       @include mobile {
         padding: 5px;
+      }
+
+      a {
+        overflow: hidden;
       }
 
       .linkButton {

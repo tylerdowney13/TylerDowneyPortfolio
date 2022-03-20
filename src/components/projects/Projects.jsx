@@ -17,11 +17,15 @@ function Projects() {
             </a>
           </div>
         </div>
-        <div className="projectPanel2">
-        </div>
-        <div className="projectPanel3">
-        </div>
-        <div className="projectPanel4">
+         <div className="projectPanel2">
+          <div className="projectPanel1Info">
+            <a href="#SHRTProject">
+              <div className="projectPanel1InfoTitleContainer">
+              <h2 className="projectPanel1InfoTitle">SHRT Store</h2>
+              <h2 className="projectPanel1InfoSubtitle">E-Commerce Website</h2>
+            </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

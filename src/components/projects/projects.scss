@@ -26,6 +26,10 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .projectPanel1 {
       background-image: url("../../../public/assets/PowerpostP1.jpg");
       background-repeat: no-repeat;
@@ -34,6 +38,73 @@
       height: 250px;
       border-radius: 10px;
       transition: 1s all ease;
+      margin: 5px;
+
+      &:hover {
+        width: 525px;
+        height: 275px;
+      }
+
+      @include mobile {
+        width: 350px;
+        height: 175px;
+
+        &:hover {
+          width: 350px;
+          height: 175px;
+        }
+      }
+
+      .projectPanel1Info {
+        background: black;
+        opacity: 0%;
+        width: 100%;
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        &:hover {
+          opacity: 80%;
+        }
+
+        @include mobile {
+          opacity: 80%;
+        }
+
+        .projectPanel1InfoTitleContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .projectPanel1InfoTitle {
+            font-size: 40px;
+          }
+
+          .projectPanel1InfoSubtitle {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .projectPanel2 {
+      background-image: url("../../../public/assets/SHRTScreenshot.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 500px;
+      height: 250px;
+      border-radius: 10px;
+      transition: 1s all ease;
+      margin: 5px;
 
       &:hover {
         width: 525px;
@@ -91,14 +162,4 @@
       }
     }
   }
-
-  //   .projectPanel2 {
-  //   }
-
-  //   .projectPanel3 {
-  //   }
-
-  //   .projectPanel4 {
-  //   }
-  // }
 }

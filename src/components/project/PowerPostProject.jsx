@@ -43,6 +43,22 @@ const PowerPostProject = () => {
                 <DiJavascript className="builtWithIcon" />
                 <span className="builtWithIconDescription">JavaScript</span>
               </div>
+              <div className="builtWithIconContainer">
+                <AiFillHtml5 className="builtWithIcon" />
+                <span className="builtWithIconDescription">HTML</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <DiCss3 className="builtWithIcon" />
+                <span className="builtWithIconDescription">CSS</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <FaReact className="builtWithIcon" />
+                <span className="builtWithIconDescription">React</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <SiMongodb className="builtWithIcon" />
+                <span className="builtWithIconDescription">MongoDB</span>
+              </div>
             </div>
           </div>
         </div>

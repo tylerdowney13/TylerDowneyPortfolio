@@ -1,8 +1,7 @@
-import { FaTshirt } from 'react-icons/fa';
-// import { GrCertificate } from 'react-icons/gr';
-import { DiJavascript} from 'react-icons/di'; // DiCss3
-// import { AiFillHtml5, AiFillApi } from 'react-icons/ai';
-// import { SiExpress, SiSpringboot, SiSpring, SiPostgresql, SiMongodb } from 'react-icons/si';
+import { FaTshirt, FaReact } from 'react-icons/fa';
+import { DiJavascript, DiCss3} from 'react-icons/di';
+import { AiFillHtml5} from 'react-icons/ai';
+import { SiMongodb } from 'react-icons/si';
 
 import './shrtproject.scss';
 
@@ -56,6 +55,22 @@ const SHRTProject = () => {
               <div className="builtWithIconContainer">
                 <DiJavascript className="builtWithIcon" />
                 <span className="builtWithIconDescription">JavaScript</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <AiFillHtml5 className="builtWithIcon" />
+                <span className="builtWithIconDescription">HTML</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <DiCss3 className="builtWithIcon" />
+                <span className="builtWithIconDescription">CSS</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <FaReact className="builtWithIcon" />
+                <span className="builtWithIconDescription">React</span>
+              </div>
+              <div className="builtWithIconContainer">
+                <SiMongodb className="builtWithIcon" />
+                <span className="builtWithIconDescription">MongoDB</span>
               </div>
             </div>
           </div>
